@@ -1,1 +1,31 @@
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Mobile Navigation Toggle
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+    // Handle Form Submission
+    const enquiryForm = document.getElementById("enquiryForm");
+    const formStatus = document.getElementById("formStatus");
+
+    enquiryForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Simple validation check
+        const fullName = document.getElementById("fullName").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const course = document.getElementById("course").value;
+
+        if (fullName && phone && course) {
+            formStatus.className = "form-status success";
+            formStatus.textContent = `Thank you, ${fullName}! Your enquiry for ${course} has been received. We will call you at ${phone} soon.`;
+            enquiryForm.reset();
+        } else {
+            alert("Please fill in all required fields.");
+        }
+    });
+});
