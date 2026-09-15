@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Academy | Quality Coaching & Guidance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Excellence<span>Academy</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#notes">Study Notes</a></li>
+                <li><a href="#enquiry">Enquiry</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Empowering Minds for a Brighter Future</h1>
+            <p>Comprehensive coaching for Class 9th to 12th, Competitive Exams, and Conceptual Mastery.</p>
+            <a href="#enquiry" class="btn btn-primary">Enroll Now / Enquire</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Expert Faculty</h3>
+                    <p>Experienced and dedicated teachers focused on conceptual clarity and exam success.</p>
+                </div>
+                <div class="card">
+                    <h3>Small Batch Sizes</h3>
+                    <p>Personalized attention to every student to address individual doubts and learning speeds.</p>
+                </div>
+                <div class="card">
+                    <h3>Regular Testing</h3>
+                    <p>Weekly tests, mock exams, and continuous evaluation with detailed feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Courses</h2>
+            <div class="grid grid-3">
+                <div class="card course-card">
+                    <span class="tag">Class 9th - 10th</span>
+                    <h3>Foundation Coaching</h3>
+                    <p>Science, Mathematics, Social Studies, and English foundation for board exam excellence.</p>
+                </div>
+                <div class="card course-card">
+                    <span class="tag">Class 11th - 12th</span>
+                    <h3>PCM & Senior Secondary</h3>
+                    <p>In-depth coverage of Physics, Chemistry, Mathematics, and English tailored for CBSE & State Boards.</p>
+                </div>
+                <div class="card course-card">
+                    <span class="tag">Target & Special</span>
+                    <h3>Competitive Exam Prep</h3>
+                    <p>Focused guidance for Non-PET Competitive Exams (RRB NTPC, SSC CHSL/CGL, Technician Grade 3).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Free Study Material & Notes</h2>
+            <p class="section-subtitle">Download high-quality chapter summaries, formula sheets, and practice PDFs.</p>
+            
+            <div class="grid grid-2">
+                <div class="card note-card">
+                    <div>
+                        <h4>Physics: Class 10 Light Reflection & Refraction</h4>
+                        <p>Complete notes with diagrams and key numerical formulas.</p>
+                    </div>
+                    <a href="notes/physics_light_summary.pdf" download class="btn btn-secondary">Download PDF</a>
+                </div>
+                <div class="card note-card">
+                    <div>
+                        <h4>Mathematics: Class 10 Polynomials Quick Revision</h4>
+                        <p>Important questions, shortcut formulas, and previous year problems.</p>
+                    </div>
+                    <a href="notes/maths_polynomials_notes.pdf" download class="btn btn-secondary">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section id="enquiry" class="section">
+        <div class="container">
+            <h2 class="section-title">Student Enquiry Form</h2>
+            <p class="section-subtitle">Have questions? Fill out the form below and we will get back to you shortly.</p>
+
+            <form class="enquiry-form" id="enquiryForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="Enter student's full name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required placeholder="Enter 10-digit mobile number">
+                </div>
+                <div class="form-group">
+                    <label for="course">Course / Class</label>
+                    <select id="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="Class 9th">Class 9th</option>
+                        <option value="Class 10th">Class 10th</option>
+                        <option value="Class 11th (PCM)">Class 11th (PCM)</option>
+                        <option value="Class 12th (PCM)">Class 12th (PCM)</option>
+                        <option value="RRB NTPC / SSC">Competitive (RRB / SSC)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message / Queries</label>
+                    <textarea id="message" rows="4" placeholder="Any specific subjects or questions?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Excellence Academy. All Rights Reserved.</p>
+            <p>Location: Main Market Road, Danapur / Patna, Bihar</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
